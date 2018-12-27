@@ -1,0 +1,14 @@
+@import url(//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css);
+
+.book-body p , .book-body h1,.book-body h2,.book-body h3,.book-body h4,.book-body h5,.book-body h6,.book-body div,.book-body span ,  .summary , .summary li , .summary li a  {
+    font-family : 'Microsoft JhengHei', sans-serif;
+}
+
+
+.book .book-body .page-wrapper .page-inner section.normal {
+	font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+code {
+	font-family: 'Hack', sans-serif;
+}

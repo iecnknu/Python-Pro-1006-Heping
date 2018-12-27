@@ -1,0 +1,1876 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>函式 Function - 參數 part.1 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-JhengHei/fontfamily.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo-link/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="han-shi-function-can-shu-part-2.html" />
+    
+    
+    <link rel="prev" href="han-shi-function-ding-yi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    關於這本書
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="SUMMARY.html">
+            
+                <a href="SUMMARY.html">
+            
+                    
+                    目錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="20181006-shang-ke-ri-zhi.html">
+            
+                <a href="20181006-shang-ke-ri-zhi.html">
+            
+                    
+                    20181006 - 上課日誌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="20180303-shang-ke-ri-zhi.html">
+            
+                <a href="20180303-shang-ke-ri-zhi.html">
+            
+                    
+                    20180303 - 上課日誌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="goolgezhang-hao.html">
+            
+                <a href="goolgezhang-hao.html">
+            
+                    
+                    Goolge帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="google-classroom.html">
+            
+                <a href="google-classroom.html">
+            
+                    
+                    Google Classroom
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    課外補充
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="youtubeshang-de-ke-pu-pin-dao.html">
+            
+                <a href="youtubeshang-de-ke-pu-pin-dao.html">
+            
+                    
+                    Youtube上的科普頻道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="tui-jian-yue-du-shu-dan.html">
+            
+                <a href="tui-jian-yue-du-shu-dan.html">
+            
+                    
+                    推薦閱讀書單
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="dian-nao-shang-de-ying-ti-cuo-wu-ti-shi.html">
+            
+                <a href="dian-nao-shang-de-ying-ti-cuo-wu-ti-shi.html">
+            
+                    
+                    電腦上的硬體錯誤提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="dian-nao-shang-de-0-he-1.html">
+            
+                <a href="dian-nao-shang-de-0-he-1.html">
+            
+                    
+                    電腦上的0和1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="bi-jin-03c0-ff01.html">
+            
+                <a href="bi-jin-03c0-ff01.html">
+            
+                    
+                    逼近π！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="tqc-201806kao-ti.html">
+            
+                <a href="tqc-201806kao-ti.html">
+            
+                    
+                    TQC-201806考題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="ti-mu-da-tiao-zhan.html">
+            
+                <a href="ti-mu-da-tiao-zhan.html">
+            
+                    
+                    經典題目大挑戰
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Python進階知識
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="han-shi-function-ding-yi.html">
+            
+                <a href="han-shi-function-ding-yi.html">
+            
+                    
+                    函式 Function - 定義
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="han-shi-function-huo-yong.html">
+            
+                <a href="han-shi-function-huo-yong.html">
+            
+                    
+                    函式 Function - 參數 part.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="han-shi-function-can-shu-part-2.html">
+            
+                <a href="han-shi-function-can-shu-part-2.html">
+            
+                    
+                    函式 Function - 參數 part.2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="han-shi-function-quan-yu-bian-shu-3001-qu-yu-bian-shu.html">
+            
+                <a href="han-shi-function-quan-yu-bian-shu-3001-qu-yu-bian-shu.html">
+            
+                    
+                    函式 Function - 全域變數、區域變數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="han-shi-function-return-zhi-ling.html">
+            
+                <a href="han-shi-function-return-zhi-ling.html">
+            
+                    
+                    函式 Function - return指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="han-shi-function-ren-yi-yin-shu-lie.html">
+            
+                <a href="han-shi-function-ren-yi-yin-shu-lie.html">
+            
+                    
+                    函式 Function - 任意引數列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="han-shi-function-shuo-ming-wen-jian.html">
+            
+                <a href="han-shi-function-shuo-ming-wen-jian.html">
+            
+                    
+                    函式 Function - 說明文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="han-shi-function-di-hui.html">
+            
+                <a href="han-shi-function-di-hui.html">
+            
+                    
+                    函式 Function - 遞迴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="han-shi-function-lambda-ni-ming-han-shi.html">
+            
+                <a href="han-shi-function-lambda-ni-ming-han-shi.html">
+            
+                    
+                    函式 Function - lambda匿名函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="format-han-shi-ge-shi-hua-shu-chu.html">
+            
+                <a href="format-han-shi-ge-shi-hua-shu-chu.html">
+            
+                    
+                    format( )函式 - 格式化輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="format-han-shi-ge-shi-cao-zuo-fu-hao.html">
+            
+                <a href="format-han-shi-ge-shi-cao-zuo-fu-hao.html">
+            
+                    
+                    format( )函式 - 格式操作符號
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ben-di-duanyun-xing-python.html">
+            
+                <a href="ben-di-duanyun-xing-python.html">
+            
+                    
+                    本地端運行Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="an-zhuang-python.html">
+            
+                <a href="an-zhuang-python.html">
+            
+                    
+                    安裝Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="an-zhuang-yi-kuan-hao-de-editor.html">
+            
+                <a href="an-zhuang-yi-kuan-hao-de-editor.html">
+            
+                    
+                    安裝一款好的editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="sublime-text-3-package-control.html">
+            
+                <a href="sublime-text-3-package-control.html">
+            
+                    
+                    Sublime Text 3 - Package Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="sublime-text-3-zhong-wen-hua.html">
+            
+                <a href="sublime-text-3-zhong-wen-hua.html">
+            
+                    
+                    Sublime Text 3 - 中文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="sublime-text-3-sublimetmpl.html">
+            
+                <a href="sublime-text-3-sublimetmpl.html">
+            
+                    
+                    Sublime Text 3 - SublimeTmpl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="zhi-xing-python-cheng-shi.html">
+            
+                <a href="zhi-xing-python-cheng-shi.html">
+            
+                    
+                    執行Python程式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="an-zhuang-mo-zu-pip-zhi-ling.html">
+            
+                <a href="an-zhuang-mo-zu-pip-zhi-ling.html">
+            
+                    
+                    安裝模組pip指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="xu-ni-huan-jing.html">
+            
+                <a href="xu-ni-huan-jing.html">
+            
+                    
+                    虛擬環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="open-weather-map.html">
+            
+                <a href="open-weather-map.html">
+            
+                    
+                    Open Weather Map
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="shen-qing-zhang-hao.html">
+            
+                <a href="shen-qing-zhang-hao.html">
+            
+                    
+                    申請帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="qu-de-api-key.html">
+            
+                <a href="qu-de-api-key.html">
+            
+                    
+                    取得API key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="yue-du-api-doc.html">
+            
+                <a href="yue-du-api-doc.html">
+            
+                    
+                    閱讀API doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="xiang-owm-qing-qiu-zi-xun-ff01.html">
+            
+                <a href="xiang-owm-qing-qiu-zi-xun-ff01.html">
+            
+                    
+                    向OWM請求資訊！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="zi-xun-jiao-huan-biao-zhun.html">
+            
+                <a href="zi-xun-jiao-huan-biao-zhun.html">
+            
+                    
+                    資訊交換標準
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="jsonjian-jie.html">
+            
+                <a href="jsonjian-jie.html">
+            
+                    
+                    JSON簡介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="jsonzi-liao-yue-du.html">
+            
+                <a href="jsonzi-liao-yue-du.html">
+            
+                    
+                    JSON資料閱讀
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="requests-mo-zu.html">
+            
+                <a href="requests-mo-zu.html">
+            
+                    
+                    requests 模組
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="an-zhuang-requests-mo-zu-ff01.html">
+            
+                <a href="an-zhuang-requests-mo-zu-ff01.html">
+            
+                    
+                    安裝Requests模組！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="zhuan-xie-requests-qing-qiu.html">
+            
+                <a href="zhuan-xie-requests-qing-qiu.html">
+            
+                    
+                    撰寫requests請求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="jie-yi-json-ge-shi.html">
+            
+                <a href="jie-yi-json-ge-shi.html">
+            
+                    
+                    解譯JSON格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="d83d-dc7c-d83c-dffb-jin-jie-ti.html">
+            
+                <a href="d83d-dc7c-d83c-dffb-jin-jie-ti.html">
+            
+                    
+                    👼🏻進階題-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="d83d-dc7c-d83c-dffb-jin-jie-984c-2.html">
+            
+                <a href="d83d-dc7c-d83c-dffb-jin-jie-984c-2.html">
+            
+                    
+                    👼🏻進階題-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="li-wai-chu-7406-try-except.html">
+            
+                <a href="li-wai-chu-7406-try-except.html">
+            
+                    
+                    例外處理- try except
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="dian-nao-zhong-de-shi-jian-xi-tong.html">
+            
+                <a href="dian-nao-zhong-de-shi-jian-xi-tong.html">
+            
+                    
+                    電腦中的時間系統
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="time-shi-jian-mo-zu.html">
+            
+                <a href="time-shi-jian-mo-zu.html">
+            
+                    
+                    time - 時間模組
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="d83d-de08-tiao-zhan-ti.html">
+            
+                <a href="d83d-de08-tiao-zhan-ti.html">
+            
+                    
+                    😈挑戰題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="zheng-fu-zi-xun-kai-fang-ping-tai.html">
+            
+                <a href="zheng-fu-zi-xun-kai-fang-ping-tai.html">
+            
+                    
+                    政府資訊開放平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="d83d-dc7d-gong-kai-zi-xun-ying-yong-tiao-zhan-984c-1.html">
+            
+                <a href="d83d-dc7d-gong-kai-zi-xun-ying-yong-tiao-zhan-984c-1.html">
+            
+                    
+                    👽公開資訊應用挑戰題-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="d83d-dc7d-gong-kai-zi-xun-ying-yong-tiao-zhan-984c-2.html">
+            
+                <a href="d83d-dc7d-gong-kai-zi-xun-ying-yong-tiao-zhan-984c-2.html">
+            
+                    
+                    👽公開資訊應用挑戰題-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="build-our-web-jia-she-wang-zhan.html">
+            
+                <a href="build-our-web-jia-she-wang-zhan.html">
+            
+                    
+                    Build Our Web - 架設網站
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="wang-zhan-ji-ben-jia-gou.html">
+            
+                <a href="wang-zhan-ji-ben-jia-gou.html">
+            
+                    
+                    網站基本架構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="wang-zhan-de-gu-gan-html-1.html">
+            
+                <a href="wang-zhan-de-gu-gan-html-1.html">
+            
+                    
+                    網站的骨幹 - HTML5-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="wang-zhan-de-gu-gan-html-2.html">
+            
+                <a href="wang-zhan-de-gu-gan-html-2.html">
+            
+                    
+                    網站的骨幹 - HTML5-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="wang-zhan-de-gu-gan-html5-3.html">
+            
+                <a href="wang-zhan-de-gu-gan-html5-3.html">
+            
+                    
+                    網站的骨幹 - HTML5-3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="wang-zhan-de-gu-gan-html5-4.html">
+            
+                <a href="wang-zhan-de-gu-gan-html5-4.html">
+            
+                    
+                    網站的骨幹 - HTML5-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="html5de-wai-yi-css.html">
+            
+                <a href="html5de-wai-yi-css.html">
+            
+                    
+                    網站的外衣 - CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="bootstrap-4.html">
+            
+                <a href="bootstrap-4.html">
+            
+                    
+                    Bootstrap 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="wang-ye-si-fu-qi.html">
+            
+                <a href="wang-ye-si-fu-qi.html">
+            
+                    
+                    網頁伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="xampp.html">
+            
+                <a href="xampp.html">
+            
+                    
+                    XAMPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="no-ip-free-dynamic-dns.html">
+            
+                <a href="no-ip-free-dynamic-dns.html">
+            
+                    
+                    No-IP : Free Dynamic DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="yun-duan-ping-tai.html">
+            
+                <a href="yun-duan-ping-tai.html">
+            
+                    
+                    雲端平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="web-crawler-wang-lu-pa-chong.html">
+            
+                <a href="web-crawler-wang-lu-pa-chong.html">
+            
+                    
+                    Web Crawler - 網路爬蟲
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="beautifulsoup-4.html">
+            
+                <a href="beautifulsoup-4.html">
+            
+                    
+                    BeautifulSoup 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="du-qu-li-xian-html-wen-jian.html">
+            
+                <a href="du-qu-li-xian-html-wen-jian.html">
+            
+                    
+                    讀取離線html文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="du-qu-xian-shang-html-wen-jian.html">
+            
+                <a href="du-qu-xian-shang-html-wen-jian.html">
+            
+                    
+                    讀取線上html文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="zi-chuan-fang-fa-bu-chong.html">
+            
+                <a href="zi-chuan-fang-fa-bu-chong.html">
+            
+                    
+                    字串方法補充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="wikipediawei-ji-bai-ke.html">
+            
+                <a href="wikipediawei-ji-bai-ke.html">
+            
+                    
+                    Wikipedia維基百科
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="xing-zuo-pai-xing-bang.html">
+            
+                <a href="xing-zuo-pai-xing-bang.html">
+            
+                    
+                    星座排行榜
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="selenium.html">
+            
+                <a href="selenium.html">
+            
+                    
+                    Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="pchomexian-shang-gou-wu.html">
+            
+                <a href="pchomexian-shang-gou-wu.html">
+            
+                    
+                    PChome線上購物
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="katalon-recorder.html">
+            
+                <a href="katalon-recorder.html">
+            
+                    
+                    Katalon Recorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="yin-le-zuo-qu-jia.html">
+            
+                <a href="yin-le-zuo-qu-jia.html">
+            
+                    
+                    音樂作曲家
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="yin-le-zuo-qu-jia/sheng-yin-yu-yin-le.html">
+            
+                <a href="yin-le-zuo-qu-jia/sheng-yin-yu-yin-le.html">
+            
+                    
+                    聲音與音樂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="yin-le-zuo-qu-jia/chuck-chuang-zao-ji-qi-ren-sheng.html">
+            
+                <a href="yin-le-zuo-qu-jia/chuck-chuang-zao-ji-qi-ren-sheng.html">
+            
+                    
+                    ChucK - 創造機器人聲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="yin-le-zuo-qu-jia/du-pu.html">
+            
+                <a href="yin-le-zuo-qu-jia/du-pu.html">
+            
+                    
+                    讀譜
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="yin-le-zuo-qu-jia/winsoundmo-zu-lai-gai-bian-ba.html">
+            
+                <a href="yin-le-zuo-qu-jia/winsoundmo-zu-lai-gai-bian-ba.html">
+            
+                    
+                    winsound模組 - 來改編吧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    創造形形色色
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="turtlemo-zu.html">
+            
+                <a href="turtlemo-zu.html">
+            
+                    
+                    Turtle模組
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="turtlemo-zu-zhi-4ee428-han-5f0f29.html">
+            
+                <a href="turtlemo-zu-zhi-4ee428-han-5f0f29.html">
+            
+                    
+                    Turtle模組指令(函式)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="hua-chu-zheng-fang-xing.html">
+            
+                <a href="hua-chu-zheng-fang-xing.html">
+            
+                    
+                    畫出正方形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="hua-chu-yuan-xing-yu-tuo-yuan-xing.html">
+            
+                <a href="hua-chu-yuan-xing-yu-tuo-yuan-xing.html">
+            
+                    
+                    畫出圓形與橢圓形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="tu-xing-tiao-zhan-ti.html">
+            
+                <a href="tu-xing-tiao-zhan-ti.html">
+            
+                    
+                    圖形挑戰題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="koch-curve-ke-he-qu-xian.html">
+            
+                <a href="koch-curve-ke-he-qu-xian.html">
+            
+                    
+                    Koch Curve 科赫曲線
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="fen-nu-niao.html">
+            
+                <a href="fen-nu-niao.html">
+            
+                    
+                    憤怒鳥
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="hua-chu-fen-nu-niao.html">
+            
+                <a href="hua-chu-fen-nu-niao.html">
+            
+                    
+                    畫出憤怒鳥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="dian-nao-shang-de-yan-se.html">
+            
+                <a href="dian-nao-shang-de-yan-se.html">
+            
+                    
+                    電腦上的顏色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="tiao-zhan-ti-jian-ceng-de-fen-nu-niao.html">
+            
+                <a href="tiao-zhan-ti-jian-ceng-de-fen-nu-niao.html">
+            
+                    
+                    挑戰題 - 漸層的憤怒鳥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="fen-nu-niao-de-fei-xing-mo-ni-qi.html">
+            
+                <a href="fen-nu-niao-de-fei-xing-mo-ni-qi.html">
+            
+                    
+                    憤怒鳥的飛行模擬器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="pong.html">
+            
+                <a href="pong.html">
+            
+                    
+                    PONG!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="pong/hua-chu-chang-di.html">
+            
+                <a href="pong/hua-chu-chang-di.html">
+            
+                    
+                    畫出場地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="pong/she-ding-wan-jia-3001-qiu.html">
+            
+                <a href="pong/she-ding-wan-jia-3001-qiu.html">
+            
+                    
+                    設定玩家、球
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="pong/bang-ding-jian-pan.html">
+            
+                <a href="pong/bang-ding-jian-pan.html">
+            
+                    
+                    綁定鍵盤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="pong/qiu-de-yi-dong-yu-ding-yi-peng-zhuang.html">
+            
+                <a href="pong/qiu-de-yi-dong-yu-ding-yi-peng-zhuang.html">
+            
+                    
+                    球的移動與定義碰撞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="pongde-da-tiao-zhan.html">
+            
+                <a href="pongde-da-tiao-zhan.html">
+            
+                    
+                    PONG!的大挑戰
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Python進階知識 - 第二階段
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="wu-jian-dao-xiang.html">
+            
+                <a href="wu-jian-dao-xiang.html">
+            
+                    
+                    物件導向程式設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="ding-yi-zi-ji-de-lei-bie.html">
+            
+                <a href="ding-yi-zi-ji-de-lei-bie.html">
+            
+                    
+                    定義自己的類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    PyPi
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="pypijie-shao.html">
+            
+                <a href="pypijie-shao.html">
+            
+                    
+                    PyPi介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="xun-zhao-yi-ge-xiang-yao-de-tao-jian.html">
+            
+                <a href="xun-zhao-yi-ge-xiang-yao-de-tao-jian.html">
+            
+                    
+                    尋找一個想要的套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="pytube.html">
+            
+                <a href="pytube.html">
+            
+                    
+                    pytube
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="pytubewen-jian-yue-du-i.html">
+            
+                <a href="pytubewen-jian-yue-du-i.html">
+            
+                    
+                    pytube文件閱讀 - I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="pytubewen-jian-yue-du-ii.html">
+            
+                <a href="pytubewen-jian-yue-du-ii.html">
+            
+                    
+                    pytube文件閱讀 - II
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >函式 Function - 參數 part.1</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x5F0F;-function---&#x53C3;&#x6578;-part1">&#x51FD;&#x5F0F; Function - &#x53C3;&#x6578; part.1</h1>
+<ol>
+<li><a href="#&#x53C3;&#x6578;-parameter-">&#x53C3;&#x6578; ( parameter )</a></li>
+<li><a href="#&#x4F4D;&#x7F6E;&#x5F15;&#x6578;-position-argument-">&#x4F4D;&#x7F6E;&#x5F15;&#x6578;( Position Argument )</a></li>
+</ol>
+<hr>
+<h4 id="&#x53C3;&#x6578;-parameter-">&#x53C3;&#x6578;( parameter ) </h4>
+<p>&#x4F7F;&#x7528;print( )&#x51FD;&#x5F0F;&#xFF0C;&#x5E95;&#x4E0B;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x5370;&#x51FA;hello&#xFF1A;</p>
+<pre><code class="lang-py">text = <span class="hljs-string">&apos;hello&apos;</span>
+print(text)
+</code></pre>
+<p>&#x6211;&#x5011;&#x662F;&#x5C07;&#x8B8A;&#x6578;text&#x4F5C;&#x70BA;&#x53C3;&#x6578;<strong>&#x50B3;&#x905E;</strong>&#x9032;&#x53BB;print( )&#x51FD;&#x5F0F;&#x4E4B;&#x4E2D;&#xFF01;&#x6240;&#x4EE5;&#x76F4;&#x8B6F;&#x5668;&#x7684;&#x7D50;&#x679C;&#x6703;&#x986F;&#x793A;<code>hello</code>&#x3002;<br>&#x6240;&#x4EE5;&#x6211;&#x5011;&#x9019;&#x88E1;&#x53EF;&#x4EE5;&#x5F97;&#x77E5;&#x51FD;&#x5F0F;&#x7684;&#x53E6;&#x4E00;&#x7A2E;&#x6A23;&#x8C8C;&#xFF1A;</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> &#x51FD;&#x5F0F;&#x540D;&#x7A31;<span class="hljs-params">( &#x53C3;&#x6578;<span class="hljs-number">1</span> , &#x53C3;&#x6578;<span class="hljs-number">2.</span>...)</span>:</span>
+    ....&#x53C3;&#x6578;<span class="hljs-number">1.</span>...
+    ...&#x57F7;&#x884C;&#x4E3B;&#x9AD4;...
+</code></pre>
+<p>&#x53C3;&#x6578;&#x53EF;&#x6709;&#x53EF;&#x7121;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x6578;&#x91CF;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x4F46;&#x7121;&#x502B;&#x662F;&#x5426;&#x6709;&#x53C3;&#x6578;&#x90FD;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x5C0F;&#x62EC;&#x5F27;( )&#xFF01;</p>
+<p>&#x5982;&#x679C;&#x6709;&#x591A;&#x500B;&#x53C3;&#x6578;&#xFF0C;Python&#x4EE5;&#x9017;&#x865F;&#x505A;&#x70BA;&#x5340;&#x9694;&#xFF0C;&#x4E26;&#x4EE5;<strong>&#x4F4D;&#x7F6E;&#x5F15;&#x6578;</strong>&#x6216;<strong>&#x95DC;&#x9375;&#x5B57;&#x5F15;&#x6578;</strong>&#x4F86;&#x505A;&#x53C3;&#x6578;&#x7684;&#x5C0D;&#x61C9;&#x3002;</p>
+<h5 id="&#x7BC4;&#x4F8B;&#xFF1A;">&#x7BC4;&#x4F8B;&#xFF1A;</h5>
+<p><a href="https://repl.it/@iec_nknu/Chuan-Di-Can-Shu-Fan-Li-1" target="_blank">&#x50B3;&#x905E;&#x53C3;&#x6578;&#x7BC4;&#x4F8B;-1</a></p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">helloPeople</span><span class="hljs-params">(name)</span>:</span>
+    print(<span class="hljs-string">&apos;hello &apos;</span> + name)
+
+name = <span class="hljs-string">&apos;Roy&apos;</span>
+helloPeople(name)
+</code></pre>
+<h5 id="&#x8AB2;&#x5802;&#x7DF4;&#x7FD2;&#xFF1A;">&#x8AB2;&#x5802;&#x7DF4;&#x7FD2;&#xFF1A;</h5>
+<p><a href="https://repl.it/@iec_nknu/Chuan-Di-Can-Shu-Lian-Xi-1" target="_blank">&#x50B3;&#x905E;&#x53C3;&#x6578;&#x7DF4;&#x7FD2;-1</a></p>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x4EFB;&#x610F;&#x6578;&#x5B57;&#xFF0C;&#x5C07;&#x8A72;&#x6578;&#x5B57;&#x50B3;&#x5165;&#x51FD;&#x5F0F;addOne&#x4E4B;&#x4E2D;&#xFF0C;&#x4E26;&#x5370;&#x51FA; &#x4EFB;&#x610F;&#x6578;&#x5B57;+1 &#x4E4B;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#x3002;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">addOne</span><span class="hljs-params">(num)</span>:</span>
+</code></pre>
+<p><a href="https://repl.it/@iec_nknu/Chuan-Di-Can-Shu-Lian-Xi-2" target="_blank">&#x50B3;&#x905E;&#x53C3;&#x6578;&#x7DF4;&#x7FD2;-2</a></p>
+<pre><code class="lang-py"><span class="hljs-string">&apos;&apos;&apos;
+&#x6709;&#x4E00;&#x500B;&#x4E32;&#x5217;&#x8A18;&#x9304;&#x8457;&#x540C;&#x5B78;&#x7684;&#x540D;&#x5B57;&#xFF0C;
+&#x8ACB;&#x547C;&#x53EB;helloPeople&#x51FD;&#x5F0F;&#xFF0C;
+&#x4E26;&#x4F7F;&#x7528;for&#x8FF4;&#x5708;&#x4F9D;&#x5E8F;&#x5411;&#x4E32;&#x5217;&#x4E2D;&#x7684;&#x5404;&#x4F4D;&#x540C;&#x5B78;&#x6253;&#x62DB;&#x547C;&#xFF01;
+&apos;&apos;&apos;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">helloPeople</span><span class="hljs-params">(name)</span>:</span>
+  print(<span class="hljs-string">&apos;hello &apos;</span> + name)
+
+guestList = [<span class="hljs-string">&apos;&#x923A;&#x6643;&apos;</span>,<span class="hljs-string">&apos;&#x9023;&#x6069;&apos;</span>,<span class="hljs-string">&apos;&#x5BA5;&#x9706;&apos;</span>,<span class="hljs-string">&apos;&#x5BB9;&#x751F;&apos;</span>,<span class="hljs-string">&apos;&#x5BA3;&#x64AB;&apos;</span>,<span class="hljs-string">&apos;&#x50B3;&#x8000;&apos;</span>]
+</code></pre>
+<hr>
+<h4 id="&#x4F4D;&#x7F6E;&#x5F15;&#x6578;-position-argument-">&#x4F4D;&#x7F6E;&#x5F15;&#x6578;( Position Argument ) </h4>
+<p>&#x51FD;&#x5F0F;&#x7684;&#x53C3;&#x6578;&#x4EE5;<strong>&#x4F4D;&#x7F6E;&#x5F15;&#x6578;</strong>&#x4F86;&#x505A;&#x70BA;&#x5C0D;&#x61C9;&#x4F9D;&#x64DA;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x50B3;&#x905E;&#x53C3;&#x6578;&#x6642;&#x7684;&#x9806;&#x5E8F;&#x4E0D;&#x5C0D;&#xFF0C;&#x90A3;&#x5C0D;&#x61C9;&#x5C31;&#x6703;&#x767C;&#x751F;&#x932F;&#x8AA4;&#x3002;</p>
+<h5 id="&#x8AB2;&#x5802;&#x7DF4;&#x7FD2;&#xFF1A;">&#x8AB2;&#x5802;&#x7DF4;&#x7FD2;&#xFF1A;</h5>
+<p><a href="https://repl.it/@iec_nknu/Wei-Zhi-Yin-Shu-Lian-Xi-1" target="_blank">&#x4F4D;&#x7F6E;&#x5F15;&#x6578;&#x7DF4;&#x7FD2;-1</a></p>
+<pre><code class="lang-py"><span class="hljs-comment">#&#x8ACB;&#x4FEE;&#x6B63;&#x4F4D;&#x7F6E;&#x5F15;&#x6578;&#xFF0C;&#x50B3;&#x905E;&#x6B63;&#x78BA;&#x7684;&#x53C3;&#x6578;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show</span><span class="hljs-params">(name, age, gender)</span>:</span>
+    print(<span class="hljs-string">&apos;&#x59D3;&#x540D;&#x70BA;&apos;</span> + name)
+    print(<span class="hljs-string">&apos;&#x5E74;&#x9F61;&#x70BA;&apos;</span> + age)
+    print(<span class="hljs-string">&apos;&#x6027;&#x5225;&#x70BA;&apos;</span> + gender)
+
+show(<span class="hljs-string">&apos;Austin&apos;</span>,<span class="hljs-string">&apos;Boy&apos;</span>,<span class="hljs-string">&apos;13&apos;</span>)
+</code></pre>
+<p><a href="https://repl.it/@iec_nknu/Wei-Zhi-Yin-Shu-Lian-Xi-2" target="_blank">&#x4F4D;&#x7F6E;&#x5F15;&#x6578;&#x7DF4;&#x7FD2;-2</a></p>
+<pre><code class="lang-py">&#x9577;&#x65B9;&#x9AD4;&#x8868;&#x9762;&#x7A4D;=&#xFF08;&#x9577;&#xD7;&#x5BEC;+&#x9577;&#xD7;&#x9AD8;+&#x5BEC;&#xD7;&#x9AD8;&#xFF09;&#xD7;<span class="hljs-number">2</span>
+&#x8ACB;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x8F38;&#x5165;&#x9577;&#x65B9;&#x9AD4;&#x7684;&#x9577;&#x3001;&#x5BEC;&#x3001;&#x9AD8;&#xFF0C;
+&#x50B3;&#x5165;&#x4E00;&#x500B;SurfaceArea()&#x51FD;&#x5F0F;&#xFF0C;&#x5370;&#x51FA;&#x9577;&#x65B9;&#x9AD4;&#x7684;&#x8868;&#x9762;&#x7A4D;&#xFF01;
+</code></pre>
+<pre><code>&#x6E2C;&#x8A66;&#x6848;&#x4F8B;&#xFF1A;
+&#x9577;&#xFF1A;10&#xFF0C;&#x5BEC;&#xFF1A;2&#xFF0C;&#x9AD8;&#xFF1A;7
+&#x8868;&#x9762;&#x7A4D;&#x70BA;208
+</code></pre><p><a href="https://repl.it/@iec_nknu/Wei-Zhi-Yin-Shu-Lian-Xi-3" target="_blank">&#x4F4D;&#x7F6E;&#x5F15;&#x6578;&#x7DF4;&#x7FD2;-3</a></p>
+<pre><code>&#x651D;&#x6C0F;&#x6EAB;&#x5EA6;&#x7684;&#x8F49;&#x6210;&#x516C;&#x5F0F;&#x70BA;&#xFF1A;
+&#x83EF;&#x6C0F;&#x6EAB;&#x5EA6; = 9/5*&#x651D;&#x6C0F;&#x6EAB;&#x5EA6; + 32
+&#x7D55;&#x5C0D;&#x6EAB;&#x5EA6; = &#x651D;&#x6C0F;&#x6EAB;&#x5EA6; + 273.2
+
+&#x8ACB;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x8F38;&#x5165;&#x651D;&#x6C0F;&#x6EAB;&#x5EA6;&#xFF0C;
+&#x4E26;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x9078;&#x64C7;&#x8981;&#x8F49;&#x63DB;&#x6210;&#x54EA;&#x7A2E;&#x6EAB;&#x5EA6;&#xFF0C;1:&#x83EF;&#x6C0F;&#x6EAB;&#x5EA6;&#x3001;2:&#x7D55;&#x5C0D;&#x6EAB;&#x5EA6;
+&#x6700;&#x5F8C;&#x5370;&#x51FA;&#x8F49;&#x63DB;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#xFF01;
+</code></pre><pre><code>&#x63D0;&#x793A;&#xFF1A;
+&#x8ACB;&#x7DF4;&#x7FD2;&#x5C07;&#x529F;&#x80FD;&#x8207;&#x6D41;&#x7A0B;&#x5206;&#x958B;&#x64B0;&#x5BEB;&#xFF01;
+</code></pre><pre><code>&#x6E2C;&#x8A66;&#x6848;&#x4F8B;-1&#xFF1A;
+&#x651D;&#x6C0F;&#x6EAB;&#x5EA6;:100
+&#x9078;&#x64C7;1:&#x83EF;&#x6C0F;&#x6EAB;&#x5EA6;&#x3001;&#x9078;&#x64C7;2:&#x7D55;&#x5C0D;&#x6EAB;&#x5EA6;
+1
+&#x7B49;&#x65BC;&#x83EF;&#x6C0F;&#x6EAB;&#x5EA6;212&#x5EA6;
+
+&#x6E2C;&#x8A66;&#x6848;&#x4F8B;-2&#xFF1A;
+&#x651D;&#x6C0F;&#x6EAB;&#x5EA6;:100
+&#x9078;&#x64C7;1:&#x83EF;&#x6C0F;&#x6EAB;&#x5EA6;&#x3001;&#x9078;&#x64C7;2:&#x7D55;&#x5C0D;&#x6EAB;&#x5EA6;
+2
+&#x7B49;&#x65BC;&#x7D55;&#x5C0D;&#x6EAB;&#x5EA6;373.2K
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="han-shi-function-ding-yi.html" class="navigation navigation-prev " aria-label="Previous page: 函式 Function - 定義">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="han-shi-function-can-shu-part-2.html" class="navigation navigation-next " aria-label="Next page: 函式 Function - 參數 part.2">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"函式 Function - 參數 part.1","level":"1.3.2","depth":2,"next":{"title":"函式 Function - 參數 part.2","level":"1.3.3","depth":2,"path":"han-shi-function-can-shu-part-2.md","ref":"han-shi-function-can-shu-part-2.md","articles":[]},"previous":{"title":"函式 Function - 定義","level":"1.3.1","depth":2,"path":"han-shi-function-ding-yi.md","ref":"han-shi-function-ding-yi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["IECLOGO@git+https://github.com/iecnknu/gitbook-plugin-IECLOGO.git","JhengHei@git+https://github.com/iecnknu/gitbook-plugin-JhengHei.git","splitter","insert-logo-link","-sharing","expandable-chapters","copy-code-button","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"insert-logo-link":{"src":"https://drive.google.com/uc?export=download&id=16aEZ3IAT-d_NDQ0WZ7hGHiTMS2_It-th","url":"www.nknucsec.com"},"search":{},"JhengHei":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"IECLOGO":{"link":"https://www.nknucsec.com","publisher":"Published with IEC, NKNU"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"han-shi-function-huo-yong.md","mtime":"2018-12-27T21:13:42.361Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-27T21:16:12.825Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-IECLOGO/rmlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
